@@ -1,0 +1,34 @@
+<h1 class="title">Search Movie by Id</h1>
+
+<div class="searchbox">
+  <input [(ngModel)]="Movieid" />
+  <button class="button" type="button" (click)="confirm()">Search</button>
+</div>
+
+<!-- 
+    เช็คค่าshows ถ้าtrue ให้ทำงาน โดยใช้ ngif
+ -->
+
+<div class="tablebox">
+  <div *ngIf="shows" class="table">
+    <span>
+      <strong>MovieId</strong>
+    </span>
+    <span>
+      <strong>NameMovie</strong>
+    </span>
+    <span>
+      <strong>TypeMovie</strong>
+    </span>
+    <span>
+      <strong>MoviePrice</strong>
+    </span>
+
+    <!--   <div class="data"> -->
+    <span class="bgdata">{{ results.Movieid }}</span>
+    <span class="bgdata">{{ results.NameMovie }}</span>
+    <span class="bgdata">{{ results.TypeMovie }}</span>
+    <span class="bgdata">{{ results.MoviePrice }}</span>
+    <!-- </div> -->
+  </div>
+</div>

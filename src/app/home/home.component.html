@@ -1,0 +1,25 @@
+<!-- 
+    1. (MoId)="getMoId($event)"     ส่งค่า id จ่าก app search    // output
+
+    4. [shows]="shows"  [results]="results"    app search รับค่า show และ result //input
+ 
+ -->
+
+<app-search
+  [shows]="shows"
+  [results]="results"
+  (MoId)="getMoId($event)"
+></app-search>
+
+<!-- 
+    2. [MoIds]="MoId"  app show รับค่า id  // input
+
+    3. (shows)="getshow($event)" (results)="getresult($event)" ส่งค่า show และ result จ่าก app show   //output
+
+ -->
+
+<app-show
+  [MoIds]="MoId"
+  (shows)="getshow($event)"
+  (results)="getresult($event)"
+></app-show>
