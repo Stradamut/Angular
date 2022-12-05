@@ -22,14 +22,11 @@ export class SearchComponent {
   confirm() {
     this.MoId.emit(this.Movieid)//ใส่ค่า id ไปใน MoId
     console.log("test")
-    // gliLLL(){
-    // }
+
   }
 
 }
 
 
-// function gliLLL() {
-//   throw new Error('Function not implemented.');
-// }
+
 
